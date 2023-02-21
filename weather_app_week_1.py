@@ -142,10 +142,10 @@ def main():
     # Window's title
     screen.title('Weather App')
 
-    # StringVar to help us manage the value of the city_name_textField widget
+    # Using StringVar to help us manage the value of the city_name_textField widget
     city_name_value = StringVar()
     
-    # Using grid to have align widgets in the same row, and using pady and padx to add padding 
+    # Using grid to align widgets in the same row, and using pady and padx to add padding 
     city_label = Label(screen, text='Enter City').grid(
         columnspan=4, pady=10,)
 
