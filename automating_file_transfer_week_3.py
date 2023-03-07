@@ -15,6 +15,7 @@ Here are the steps you can take to automate this process:
     Use the schedule library to schedule the script to run daily at a specific time.
 
     You can also set up a log file to keep track of the files that have been transferred and any errors that may have occurred during the transfer process. '''
+
 from ftplib import FTP, error_perm
 import os
 import shutil
@@ -65,7 +66,6 @@ def download_files_by_ftp_to_local_directory():
     # Close the ftp connection
     print("Closing the ftp connection")
     ftp_connection.close()
-
 
 
 def move_file_by_shutil_to_network_shared_directory():
